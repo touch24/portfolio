@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparsh Srivastava - Data & AI Portfolio</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Outfit', 'sans-serif'] },
+          colors: { 
+            brand: { 400: '#38bdf8', 500: '#0ea5e9', 600: '#0284c7' },
+            dark: { 800: '#0f172a', 900: '#020617' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #020617; color: #f8fafc; overflow-x: hidden; }
+    .glass {
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+    .glass:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #020617; }
+    ::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 10px; }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white">
+
+  <nav class="fixed w-full z-50 glass border-b-0 py-4 px-6 transition-all">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      
+      <a href="#" class="text-2xl font-extrabold tracking-tight text-white flex items-center hover:opacity-80 transition duration-300">
+        Sparsh<span class="text-brand-500 text-3xl leading-none ml-0.5">.</span>
+      </a>
+
+      <div class="hidden md:flex space-x-6 text-sm font-semibold text-gray-300">
+        <a href="#about" class="hover:text-brand-400 transition">About</a>
+        <a href="#skills" class="hover:text-brand-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-brand-400 transition">Projects</a>
+        <a href="#achievements" class="hover:text-brand-400 transition">Achievements</a>
+        <a href="#education" class="hover:text-brand-400 transition">Education</a>
+      </div>
+      <a href="0.pdf" download class="px-5 py-2 rounded-full bg-brand-500/10 text-brand-400 border border-brand-500/50 hover:bg-brand-500 hover:text-white transition duration-300 font-bold text-sm">
+        <i class="fa-solid fa-download mr-2"></i> CV
+      </a>
+    </div>
+  </nav>
+
+  <header class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20 overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-600/20 rounded-full blur-[120px] -z-10"></div>
+    
+    <div data-aos="zoom-out-up" data-aos-duration="1000">
+      <img src="0.jpg" alt="Sparsh Srivastava" 
+           class="w-48 h-48 rounded-full border-4 border-brand-500/30 object-cover shadow-[0_0_50px_rgba(56,189,248,0.3)] mb-8 mx-auto hover:scale-105 hover:border-brand-400 transition duration-500"
+           style="object-position: 50% 20%;">
+    </div>
+
+    <h1 data-aos="fade-up" data-aos-delay="200" class="text-5xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-500 mb-4 tracking-tight">
+      Sparsh Srivastava
+    </h1>
+    
+    <h2 data-aos="fade-up" data-aos-delay="400" class="text-2xl md:text-3xl text-brand-400 font-light mb-6">
+      B.Tech CSE | Data & Generative AI Enthusiast
+    </h2>
+    
+    <p data-aos="fade-up" data-aos-delay="600" class="max-w-2xl text-gray-400 text-lg md:text-xl leading-relaxed mb-10">
+      Computer Science student specializing in Data Analysis, Machine Learning, and Generative AI. Passionate about leveraging Python, PowerBI, and advanced DSA to build scalable, impactful data-driven solutions.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="0.pdf" download class="px-8 py-4 rounded-full bg-brand-500 text-dark-900 font-bold hover:bg-brand-400 hover:shadow-[0_0_30px_rgba(56,189,248,0.6)] transition duration-300 flex items-center">
+        <i class="fa-solid fa-file-pdf mr-3 text-xl"></i> Download Resume
+      </a>
+      <a href="#contact" class="px-8 py-4 rounded-full glass text-white font-bold hover:bg-white/10 transition duration-300">
+        Let's Talk
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6 py-20 space-y-40">
+    
+    <section id="about" data-aos="fade-up" class="max-w-4xl mx-auto text-center scroll-mt-24">
+      <h3 class="text-4xl font-bold mb-6 flex items-center justify-center"><i class="fa-solid fa-user-astronaut text-brand-400 mr-4"></i> About Me</h3>
+      <p class="text-gray-400 leading-relaxed text-lg mb-6">
+        I am a driven Computer Science engineering student at Lovely Professional University with a strong academic record (8.72 CGPA). My technical journey is anchored in C++ and Python, with a deep focus on Data Science, Machine Learning, and Generative AI. I enjoy tackling complex algorithmic challenges through competitive programming and building intelligent systems, from RAG document pipelines to massive crime data analyses. I thrive in collaborative environments and am highly adaptable to new technologies.
+      </p>
+    </section>
+
+    <section id="skills" data-aos="fade-up" class="scroll-mt-24">
+      <h3 class="text-4xl font-bold mb-12 text-center flex items-center justify-center"><i class="fa-solid fa-microchip text-brand-400 mr-4"></i> Skills & Technologies</h3>
+      <div class="glass p-10 rounded-3xl">
+        <div class="grid md:grid-cols-3 gap-12">
+          
+          <div>
+            <h4 class="text-xl font-bold text-white mb-6 border-b border-gray-800 pb-3"><i class="fa-solid fa-code text-brand-500 mr-2"></i> Languages</h4>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">C++</span>
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">Python</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-white mb-6 border-b border-gray-800 pb-3"><i class="fa-solid fa-layer-group text-brand-500 mr-2"></i> Libraries</h4>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">Pandas & NumPy</span>
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">Scikit-Learn</span>
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">LangChain & ChromaDB</span>
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">Streamlit</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-bold text-white mb-6 border-b border-gray-800 pb-3"><i class="fa-solid fa-wrench text-brand-500 mr-2"></i> Tools & Core</h4>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">PowerBI & DAX</span>
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">Git & GitHub</span>
+              <span class="px-5 py-2.5 bg-dark-800/80 rounded-xl text-sm border border-gray-700 hover:border-brand-400 hover:text-brand-400 transition cursor-default">Advanced DSA</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="scroll-mt-24">
+      <h3 data-aos="fade-up" class="text-4xl font-bold mb-12 text-center flex items-center justify-center"><i class="fa-solid fa-laptop-code text-brand-400 mr-4"></i> Featured Projects</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div data-aos="fade-up" data-aos-delay="100" class="glass rounded-3xl overflow-hidden group flex flex-col h-full">
+          <div class="h-48 bg-dark-800 relative overflow-hidden flex items-center justify-center border-b border-gray-800">
+             <i class="fa-solid fa-chart-pie text-5xl text-gray-600 group-hover:text-brand-400 transition duration-500 group-hover:scale-110"></i>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <h4 class="text-2xl font-bold text-white mb-2">Crime in Los Angeles</h4>
+            <p class="text-brand-400 text-sm mb-4 font-mono">[ Power BI • DAX • Power Query ]</p>
+            <p class="text-gray-400 mb-6 flex-grow">Analyzed 1.1M+ LAPD records to identify high-impact crime trends and victim vulnerability patterns. Engineered interactive dashboards featuring logarithmic scatter plots.</p>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDIzZWY1YmQtZGQ5OS00OTVmLTg1ZTctYWIyMGFkOTMwYTNkIiwidCI6ImUxNGU3M2ViLTUyNTEtNDM4OC04ZDY3LThmOWYyZTJkNWE0NiIsImMiOjEwfQ%3D%3D&pageName=23c7c7066a7c0bf556a6" target="_blank" class="inline-flex items-center text-white hover:text-brand-400 font-bold transition">
+              View Live Dashboard <i class="fa-solid fa-arrow-up-right-from-square ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200" class="glass rounded-3xl overflow-hidden group flex flex-col h-full">
+          <div class="h-48 bg-dark-800 relative overflow-hidden flex items-center justify-center border-b border-gray-800">
+             <i class="fa-solid fa-brain text-5xl text-gray-600 group-hover:text-brand-400 transition duration-500 group-hover:scale-110"></i>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <h4 class="text-2xl font-bold text-white mb-2">RAG Document Retrieval System</h4>
+            <p class="text-brand-400 text-sm mb-4 font-mono">[ Python • LangChain • ChromaDB ]</p>
+            <p class="text-gray-400 mb-6 flex-grow">Built a Retrieval-Augmented Generation (RAG) pipeline to query 1,000+ local documents. Integrated ChromaDB for vector-based semantic search, increasing accuracy by 40%.</p>
+            <a href="https://github.com/touch24/rag-document-retrieval" target="_blank" class="inline-flex items-center text-white hover:text-brand-400 font-bold transition">
+              View Source Code <i class="fa-brands fa-github ml-2 group-hover:scale-110 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="300" class="glass rounded-3xl overflow-hidden group flex flex-col h-full">
+          <div class="h-48 bg-dark-800 relative overflow-hidden flex items-center justify-center border-b border-gray-800">
+             <i class="fa-solid fa-people-group text-5xl text-gray-600 group-hover:text-brand-400 transition duration-500 group-hover:scale-110"></i>
+          </div>
+          <div class="p-8 flex flex-col flex-grow">
+            <h4 class="text-2xl font-bold text-white mb-2">SociaVerse</h4>
+            <p class="text-brand-400 text-sm mb-4 font-mono">[ Next.js • SQL • Tailwind CSS ]</p>
+            <p class="text-gray-400 mb-6 flex-grow">Collaborated within a dynamic team to engineer the ultimate college event and social platform. Centralized campus activities, streamlined event discovery, and boosted student engagement through real-time updates.</p>
+            <a href="https://www.sociaverse.in/" target="_blank" class="inline-flex items-center text-white hover:text-brand-400 font-bold transition">
+              View Live Platform <i class="fa-solid fa-arrow-up-right-from-square ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="achievements" class="scroll-mt-24">
+      <h3 data-aos="fade-up" class="text-4xl font-bold mb-12 text-center flex items-center justify-center"><i class="fa-solid fa-trophy text-brand-400 mr-4"></i> Competitive Programming & Hackathons</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <div data-aos="fade-right" class="glass p-10 rounded-3xl group hover:-translate-y-2 transition duration-300">
+          <div class="w-16 h-16 rounded-2xl bg-brand-500/10 flex items-center justify-center mb-6">
+            <i class="fa-solid fa-code text-brand-400 text-3xl group-hover:scale-110 transition"></i>
+          </div>
+          <h4 class="text-2xl font-bold text-white mb-4">Competitive Programming</h4>
+          <p class="text-brand-400 font-mono mb-4">Data Structures & Algorithms</p>
+          <ul class="text-gray-400 space-y-3 list-disc pl-5">
+            <li><strong>Codeforces:</strong> <a href="https://codeforces.com/profile/touch24" target="_blank" class="hover:text-brand-400 hover:underline transition">Active participant (touch24)</a></li>
+            <li><strong>Coding Ninjas Codekaze:</strong> <a href="3.pdf" target="_blank" class="hover:text-brand-400 hover:underline transition">Secured AIR 4005 in Round 2 (Sep '23)</a></li>
+          </ul>
+        </div>
+
+        <div data-aos="fade-left" class="glass p-10 rounded-3xl group hover:-translate-y-2 transition duration-300">
+          <div class="w-16 h-16 rounded-2xl bg-brand-500/10 flex items-center justify-center mb-6">
+            <i class="fa-solid fa-rocket text-brand-400 text-3xl group-hover:scale-110 transition"></i>
+          </div>
+          <h4 class="text-2xl font-bold text-white mb-4">Hackathons & Tech Events</h4>
+          <p class="text-brand-400 font-mono mb-4">Innovation & Building</p>
+          <ul class="text-gray-400 space-y-3 list-disc pl-5">
+            <li><strong>CipherThon 2.0:</strong> <a href="4.pdf" target="_blank" class="hover:text-brand-400 hover:underline transition">Final Round Participant with Team Alien Algo</a></li>
+            <li><strong>RC Xtreme 3.0:</strong> <a href="5.pdf" target="_blank" class="hover:text-brand-400 hover:underline transition">Completed a 15-hour intensive workshop on RC making (RISC, LPU)</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="education" class="grid lg:grid-cols-2 gap-16 scroll-mt-24">
+      
+      <div data-aos="fade-right">
+        <h3 class="text-3xl font-bold mb-8 flex items-center"><i class="fa-solid fa-graduation-cap text-brand-400 mr-4"></i> Education</h3>
+        <div class="space-y-8 border-l-2 border-gray-800 ml-3 pl-8 relative">
+          <div class="relative group">
+            <div class="absolute w-5 h-5 bg-dark-900 border-2 border-brand-500 rounded-full -left-[43px] top-1 group-hover:bg-brand-500 transition duration-300 shadow-[0_0_10px_rgba(56,189,248,0.5)]"></div>
+            <h4 class="text-xl font-bold text-white">B.Tech, Computer Science & Engineering</h4>
+            <p class="text-brand-400 text-sm font-semibold mb-2">Lovely Professional University | Aug 2023 – Present</p>
+            <p class="text-gray-400 font-bold">CGPA: 8.72</p>
+          </div>
+          <div class="relative group">
+            <div class="absolute w-5 h-5 bg-dark-900 border-2 border-gray-600 rounded-full -left-[43px] top-1 group-hover:bg-brand-500 transition duration-300"></div>
+            <h4 class="text-xl font-bold text-white">Intermediate (ISC)</h4>
+            <p class="text-brand-400 text-sm font-semibold mb-2">City Montessori School, Lucknow | Jun 2020 – Mar 2022</p>
+            <p class="text-gray-400 font-bold">Percentage: 97%</p>
+          </div>
+          <div class="relative group">
+            <div class="absolute w-5 h-5 bg-dark-900 border-2 border-gray-600 rounded-full -left-[43px] top-1 group-hover:bg-brand-500 transition duration-300"></div>
+            <h4 class="text-xl font-bold text-white">Matriculation (ICSE)</h4>
+            <p class="text-brand-400 text-sm font-semibold mb-2">City Montessori School, Lucknow | Mar 2020</p>
+            <p class="text-gray-400 font-bold">Percentage: 87.83%</p>
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-left">
+        <h3 class="text-3xl font-bold mb-8 flex items-center"><i class="fa-solid fa-certificate text-brand-400 mr-4"></i> Certifications</h3>
+        <div class="space-y-4">
+          <a href="1.pdf" target="_blank" class="glass p-6 rounded-2xl flex items-center group">
+            <div class="w-12 h-12 rounded-full bg-brand-500/10 flex items-center justify-center mr-6 group-hover:scale-110 transition duration-300">
+              <i class="fa-solid fa-robot text-brand-400 text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-white group-hover:text-brand-400 transition">Master Generative AI & Tools</h4>
+              <p class="text-gray-400 text-sm">Udemy | Sept 2025</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto text-gray-600 group-hover:text-brand-400 transition opacity-0 group-hover:opacity-100"></i>
+          </a>
+          <a href="2.pdf" target="_blank" class="glass p-6 rounded-2xl flex items-center group">
+            <div class="w-12 h-12 rounded-full bg-brand-500/10 flex items-center justify-center mr-6 group-hover:scale-110 transition duration-300">
+              <i class="fa-solid fa-chart-line text-brand-400 text-xl"></i>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-white group-hover:text-brand-400 transition">Machine Learning with Data Science</h4>
+              <p class="text-gray-400 text-sm">CipherSchools | Jul 2025</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square ml-auto text-gray-600 group-hover:text-brand-400 transition opacity-0 group-hover:opacity-100"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="relative py-32 px-6 text-center overflow-hidden border-t border-gray-800/50 mt-20 scroll-mt-24">
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand-600/10 rounded-full blur-[100px] -z-10"></div>
+    
+    <div data-aos="fade-up" class="max-w-3xl mx-auto">
+      <h2 class="text-5xl font-black text-white mb-6">Ready to collaborate?</h2>
+      <p class="text-xl text-gray-400 mb-6">I am currently looking for new opportunities. Whether you have a project, an internship offer, or just want to connect, my inbox is open.</p>
+      
+      <p class="text-brand-400 text-lg font-bold mb-10"><i class="fa-solid fa-phone mr-2"></i> +91-9198882308</p>
+
+      <a href="mailto:srivastavasparsh24@gmail.com?subject=Portfolio Inquiry" class="inline-flex items-center px-10 py-5 rounded-full bg-brand-500 text-dark-900 font-extrabold text-xl hover:bg-brand-400 hover:shadow-[0_0_40px_rgba(56,189,248,0.6)] hover:-translate-y-1 transition duration-300">
+        <i class="fa-solid fa-paper-plane mr-4"></i> srivastavasparsh24@gmail.com
+      </a>
+
+      <div class="flex justify-center space-x-8 mt-16">
+        <a href="https://www.linkedin.com/in/sparsh-srivastava24/" target="_blank" class="w-14 h-14 rounded-full glass flex items-center justify-center text-2xl text-gray-400 hover:text-white hover:border-brand-500 hover:bg-brand-500/20 hover:-translate-y-2 transition duration-300">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/touch24" target="_blank" class="w-14 h-14 rounded-full glass flex items-center justify-center text-2xl text-gray-400 hover:text-white hover:border-brand-500 hover:bg-brand-500/20 hover:-translate-y-2 transition duration-300">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p class="mt-16 text-gray-600 text-sm">&copy; 2026 Sparsh Srivastava. Built for impact.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true, 
+      offset: 100,
+    });
+  </script>
+</body>
+</html>
